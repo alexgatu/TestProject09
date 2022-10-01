@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0380054c-2e28-4953-9d52-97c331194a78" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/html_css_js/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/html_css_js/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/html_css_js/registration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/html_css_js/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="0380054c-2e28-4953-9d52-97c331194a78" name="Changes" comment="Adding HTML pages">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/html_css_js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/html_css_js/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/html_css_js/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/html_css_js/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/html_css_js/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +51,14 @@
       <option name="presentableId" value="Default" />
       <updated>1664016698909</updated>
     </task>
+    <task id="LOCAL-00001" summary="Adding HTML pages">
+      <created>1664616272115</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664616272115</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -66,5 +71,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding HTML pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding HTML pages" />
   </component>
 </project>

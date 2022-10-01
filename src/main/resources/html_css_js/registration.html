@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8"/>
         <title>User Registration</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css"/>
+        <script src="script.js"></script>
     </head>
     <body>
         <form action="index.php" method="get" target="_blank">
@@ -11,16 +12,16 @@
             <table>
                 <tr>
                     <td>
-                        <label for="firstNameInput">First Name:</label>
+                        <label for="firstNameInput" class="label tableItems">First Name:</label>
                     </td>
                     <td>
-                        <input type="text" id="firstNameInput" name="input1"/><br/>
+                        <input type="text" id="firstNameInput" name="input1" onfocusout="validateForm('firstNameInput');"/><br/>
                     </td>
                 </tr>
 
                 <tr>
                     <td>
-                        <label for="lastNameInput">Last Name:</label>
+                        <label for="lastNameInput" class="label tableItems">Last Name:</label>
                     </td>
                     <td>
                         <input type="text" id="lastNameInput" name="input2"/><br/>
@@ -30,7 +31,7 @@
 
             </table>
 
-            <label for="usernameInput">Username:</label>
+            <label for="usernameInput" class="label">Username:</label>
             <input type="text" id="usernameInput" name="input7"/><br/>
 
             <label for="passwordInput">Password:</label>
@@ -60,6 +61,10 @@
 
             <button type="submit" id="submitForm" name="submit1">Submit the Data</button>
             <button type="reset" id="resetForm" name="reset1" >Reset the Data</button><br/>
+            <input type="button" value="Validate ME!" onclick="validateFormAll();"/> <br/>
+            <div id="errorText">
+
+            </div>
         </form>
     </body>
 </html>
