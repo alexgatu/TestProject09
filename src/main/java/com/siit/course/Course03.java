@@ -1,10 +1,12 @@
 package com.siit.course;
+import static com.siit.course.utils.MathFunctions.isPrimeNumber;
 
 public class Course03 {
 
     static int x = 0;
 
-    public static void main(String[] args) {
+    public static void course03(String[] args) {
+
         final double PI = 3.14;
         final int MAX_SIZE = 100; // naming convention all uppercase split by _
         int y = 100; // primitive
@@ -61,7 +63,7 @@ public class Course03 {
 
             }
         }
-    // while example
+        // while example
         int index = 0;
         while(myBool) {
             System.out.println("WHILE Infinite loooop !!!! " + index);
@@ -121,13 +123,7 @@ public class Course03 {
         int countPrime = 0;
         for (int i = 2; i < MAX_NUMBER; i++) {
             // i is the current number we test if it is prime :)
-            boolean isPrime = true;
-            for (int j = 2; j < i / 2; j++) {
-                if (i % j == 0) {
-                    isPrime = false;
-                    break;
-                }
-            }
+            boolean isPrime = isPrimeNumber(i);
             if(isPrime) {
                 System.out.println("Number " + i + " is prime");
                 countPrime++;
@@ -137,6 +133,8 @@ public class Course03 {
 //            }
         }
         System.out.println("Totoal number of primes are " + countPrime);
+        boolean pn = isPrimeNumber(12345);
     }
+
 
 }
