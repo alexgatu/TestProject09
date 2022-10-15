@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0380054c-2e28-4953-9d52-97c331194a78" name="Changes" comment="Course03 - Java Intro">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/siit/course/Course04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/siit/course/CourseMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/siit/course/NewMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/siit/course/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/siit/course/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/siit/course/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/siit/course/utils/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/siit/course/utils/MathFunctions.java" afterDir="false" />
+    <list default="true" id="0380054c-2e28-4953-9d52-97c331194a78" name="Changes" comment="Course04 - Java Methods, Constructors, Class, Object">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/siit/course/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/siit/course/CarBrands.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/siit/course/Course03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/siit/course/Course03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/siit/course/Course04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/siit/course/Course04.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665227634809</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Course04 - Java Methods, Constructors, Class, Object">
+      <created>1665830281266</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665830281266</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +134,7 @@
     <MESSAGE value="Adding HTML pages" />
     <MESSAGE value="Adding JS/CSS pages" />
     <MESSAGE value="Course03 - Java Intro" />
-    <option name="LAST_COMMIT_MESSAGE" value="Course03 - Java Intro" />
+    <MESSAGE value="Course04 - Java Methods, Constructors, Class, Object" />
+    <option name="LAST_COMMIT_MESSAGE" value="Course04 - Java Methods, Constructors, Class, Object" />
   </component>
 </project>

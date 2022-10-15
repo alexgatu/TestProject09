@@ -2,6 +2,7 @@ package com.siit.course;
 import com.siit.course.utils.Circle;
 import org.w3c.dom.css.Rect;
 
+import java.awt.*;
 import java.util.Date;
 
 import static com.siit.course.utils.MathFunctions.*;
@@ -113,6 +114,26 @@ public class Course04 {
 
         p3.eat();
         p3.eat();
+
+        CarBrands dacia = new CarBrands(
+                "DACIA",
+                new Date(20, 05, 1950),
+                "RENAULT",
+                "Pitesti",
+                p3
+        );
+        Car car1 = new Car(
+                dacia,
+                "DUSTER",
+                Color.RED,
+                "benzina",
+                true,
+                "1234567890"
+        );
+        car1.accelerate();
+        car1.paintCar(Color.BLUE);
+        System.out.println("Car " + car1.model + " with brand " + car1.brand.name);
+
     }
 
 
