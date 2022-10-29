@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor
-public class Shape {
+public class Shape implements IShape{
 
     private String color;
 
@@ -25,5 +25,6 @@ public class Shape {
     protected void shapePrivateMethod() {
         System.out.println("THIS IS A METHOD JUST FOR SHAPE");
     }
+    //public abstract void doAnotherThing();
 
 }
