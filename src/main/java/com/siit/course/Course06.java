@@ -160,7 +160,7 @@ public class Course06 {
         System.out.println(qh);
         System.out.println(q);
 
-        ArrayList<String> browsers = new ArrayList<>() {
+        ArrayList<String> browsers = new ArrayList<String>() {
             {
                 add("Firefox");
                 add("Chrome");
