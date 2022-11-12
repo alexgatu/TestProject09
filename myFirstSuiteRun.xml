@@ -21,4 +21,14 @@
             <class name="MyFirstTestNGTest"/>
         </classes>
     </test>
+    <test name="ClassActivity">
+        <groups>
+            <run>
+                <include name="print"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="ClassActivityTest"/>
+        </classes>
+    </test>
 </suite>
