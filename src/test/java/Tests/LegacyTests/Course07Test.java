@@ -1,3 +1,5 @@
+package Tests.LegacyTests;
+
 import com.siit.course.Circle;
 import com.siit.course.Person;
 import com.siit.course.Rectangle;
