@@ -1,7 +1,6 @@
 package Tests.DataTests;
 
 import Pages.DemoApp.LoginPage;
-import Tests.ObjectModels.AccountModel;
 import Tests.ObjectModels.LoginModel;
 import Utils.Tools;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -149,7 +148,7 @@ public class LoginDataTests extends BaseTest {
         Collection<Object[]> dp = new ArrayList<>();
         try {
             Connection connection = DriverManager.getConnection("jdbc:mysql://" + dbHostname + ":" + dbPort
-                    + "/" + dbSchema, dbUser, dbPassword);
+                    + "/" + dbSchema, dbUser, new String(base64.decode(dbPassword.getBytes())));
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("SELECT * FROM login_negative");
             while (resultSet.next()) {

@@ -3,6 +3,7 @@ package Tests.DataTests;
 import Utils.BrowserUtils;
 import Utils.ConstantUtils;
 import Utils.GenericUtils;
+import org.apache.commons.codec.binary.Base64;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -14,6 +15,7 @@ public class BaseTest {
     String dbHostname, dbUser, dbSchema, dbPassword, dbPort;
     String browser = GenericUtils.getBrowserConfig(usedConfig);
     String baseUrl = GenericUtils.createBaseUrl(usedConfig);
+    Base64 base64 = new Base64();
 
     @BeforeTest
     public void beforeTest() {
