@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Curs 8">
+    <parameter name="param1" value="Primul Parametru"/>
+    <parameter name="param2" value="1988" />
+    <listeners>
+        <listener class-name="Utils.ExtentTestListener"></listener>
+    </listeners>
     <test name="Smoke Tests">
         <groups>
             <run>
@@ -8,7 +13,7 @@
             </run>
         </groups>
         <classes>
-            <class name="Tests.LegacyTests.MyFirstTestNGTest"/>
+            <class name="Tests.DemoApp.LoginTests"/>
         </classes>
     </test>
     <test name="Regression Tests">

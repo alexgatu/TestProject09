@@ -4,6 +4,7 @@ import Pages.DemoApp.AlertPage;
 import Pages.DemoApp.ClickInterceptorPage;
 import Pages.DemoApp.HoverPage;
 import Pages.DemoApp.MainPage;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

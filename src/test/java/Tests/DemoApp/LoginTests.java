@@ -2,6 +2,7 @@ package Tests.DemoApp;
 
 import Pages.DemoApp.LoginPOMPage;
 import Pages.DemoApp.LoginPage;
+import Utils.ExtentTestManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
@@ -14,16 +15,17 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 
 public class LoginTests extends BaseTest{
 
-
     // Test with Page Factory with Asserts outside for actions
-    @Test
-    public void loginPositiveTest() {
+    @Test(groups = {"Smoke"})
+    public void loginPositiveTest(Method method) {
+        ExtentTestManager.startTest(method.getName(), "");
         driver.get(baseUrl + "#/login");
         LoginPage lp = PageFactory.initElements(driver, LoginPage.class);
         lp.verifyPage();

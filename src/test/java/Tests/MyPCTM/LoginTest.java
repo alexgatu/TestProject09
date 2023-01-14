@@ -3,12 +3,20 @@ package Tests.MyPCTM;
 import Pages.MyPCTM.AccountEditPage;
 import Pages.MyPCTM.AccountPage;
 import Pages.MyPCTM.LoginPage;
+import Utils.AllureTestListener;
 import Utils.GenericUtils;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import io.qameta.allure.*;
 
+@Listeners( {AllureTestListener.class})
+@Epic("Smoke Tests")
+@Feature("Login Tests")
 public class LoginTest extends BaseTest{
 
-    @Test
+    @Test(description = "login basic test", priority = 0)
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("Basic Login Test")
     public void loginBasicTest() {
         driver.get(baseUrl + "/index.php?route=account/login");
 

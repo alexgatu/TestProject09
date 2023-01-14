@@ -95,4 +95,12 @@ public class MyFirstTestNGTest {
         Assert.assertNotNull(env);
     }
 
+    @Parameters( {"param1", "param2"} )
+    @Test(groups = { "Smoke" })
+    public void myTest(String param1, String param2) {
+        System.out.println("a simple test!");
+        System.out.println(param1);
+        System.out.println(param2);
+    }
+
 }

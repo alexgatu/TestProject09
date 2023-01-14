@@ -13,7 +13,7 @@ public class CookieTests extends BaseTest{
     public void cookieTest01() {
         driver.get(baseUrl);
         SeleniumUtils.printCookies(driver);
-        SeleniumUtils.takeScreenshot(driver);
+        String path = SeleniumUtils.takeScreenshot(driver);
     }
 
     @Test
