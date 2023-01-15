@@ -2,6 +2,7 @@ package Tests.DataTests;
 
 import Pages.DemoApp.LoginPage;
 import Tests.ObjectModels.LoginModel;
+import Utils.ExtentTestManager;
 import Utils.Tools;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.opencsv.CSVReader;
@@ -15,6 +16,7 @@ import javax.xml.bind.Unmarshaller;
 import java.io.File;
 import java.io.IOException;
 import java.io.Reader;
+import java.lang.reflect.Method;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.*;
@@ -28,6 +30,7 @@ public class LoginDataTests extends BaseTest {
     @DataProvider(name = "jsonDp")
     public Iterator<Object[]> jsonDpCollection() throws IOException {
         Collection<Object[]> dp = new ArrayList<>();
+
 //      here is starting deserialization of json into LoginModel object
         ObjectMapper objectMapper = new ObjectMapper();
 
@@ -41,9 +44,17 @@ public class LoginDataTests extends BaseTest {
     }
 
     @Test(dataProvider = "jsonDp")
-    public void loginWithJsonTest(LoginModel lm) {
+    public void loginWithJsonTest(LoginModel lm, Method method) {
+        test = ExtentTestManager.startTest(method.getName(), "");
         printData(lm);
         loginActions(lm);
+    }
+
+    @Test
+    public void failOnPurpose(Method method) {
+        test = ExtentTestManager.startTest(method.getName(), "");
+        driver.navigate().to("https://google.com");
+        Assert.assertEquals("true", "false");
     }
 
     /*###############################3 Login with xml data #############################################*/
