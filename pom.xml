@@ -16,6 +16,7 @@
         <extentVersion>5.0.9</extentVersion>
         <aspectjVersion>1.9.19</aspectjVersion>
         <allureVersion>2.20.1</allureVersion>
+        <restAssuredVersion>5.3.0</restAssuredVersion>
     </properties>
 
     <dependencies>
@@ -141,6 +142,14 @@
             <artifactId>allure-testng</artifactId>
             <version>${allureVersion}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>${restAssuredVersion}</version>
+            <scope>test</scope>
+        </dependency>
+
 
     </dependencies>
     <build>
