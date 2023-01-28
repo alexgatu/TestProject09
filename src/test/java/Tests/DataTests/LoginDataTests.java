@@ -188,10 +188,6 @@ public class LoginDataTests extends BaseTest {
     // Utility methods
     //  methods used to show info related to login model
     private void printData(LoginModel lm) {
-//        System.out.println("Account:username" + lm.getAccount().getUsername()
-//                + "/password:" + lm.getAccount().getPassword());
-//        System.out.println("User error:" + lm.getUserError());
-//        System.out.println("Password error:" + lm.getPasswordError());
         System.out.println(lm);
     }
 
